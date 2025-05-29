@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayne Kiekebosch - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Shayne Kiekebosch</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Shayne Kiekebosch - Web Developer</h1>
+            <p>Hey there! 👋 I'm a web developer who loves turning ideas into beautiful, functional websites. Let's create something amazing together!</p>
+            <a href="#contact" class="cta-button">Let's Chat</a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <a href="https://bimholoview.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/bimholoview.png" alt="Bimholoview Website">
+                    <h3>Bimholoview</h3>
+                    <p>Modern BIM visualization platform serving a large amount of users with advanced file upload and management capabilities</p>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://www.heybach.co.nz/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/heybach.png" alt="HeyBach Website">
+                    <h3>HeyBach</h3>
+                    <p>Elegant calendar interface with real-time database integration for efficient scheduling and bach management</p>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://tristramgreenland.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/repilingdoctor.png" alt="Repiling Doctor Website">
+                    <h3>Repiling Doctor</h3>
+                    <p>Single page website designed to catch users' attention and drive business growth</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <div class="price">$800 NZD</div>
+                <ul>
+                    <li>Single Page</li>
+                    <li>Responsive Design</li>
+                    <li>Contact Form</li>
+                    <li>30-day Bug Fixing</li>
+                </ul>
+                <a href="#contact" class="cta-button">Choose Plan</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Professional</h3>
+                <div class="price">$1400 NZD</div>
+                <ul>
+                    <li>Everything in Basic Plan</li>
+                    <li>Up to 5 Pages</li>
+                    <li>Basic SEO</li>
+                    <li>Custom Features</li>
+                </ul>
+                <a href="#contact" class="cta-button">Choose Plan</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <div class="price">$1999 NZD</div>
+                <ul>
+                    <li>Everything in Professional Plan</li>
+                    <li>Unlimited Pages</li>
+                    <li>Database Integration</li>
+                    <li>Advanced Features</li>
+                </ul>
+                <a href="#contact" class="cta-button">Choose Plan</a>
+            </div>
+        </div>
+
+        <h2 class="addons-title">Additional Services</h2>
+        <div class="addons-grid">
+            <div class="addon-card">
+                <h3>Website Maintenance</h3>
+                <div class="price">$150 NZD/month</div>
+                <ul>
+                    <li>Regular Updates</li>
+                    <li>Security Monitoring</li>
+                    <li>Performance Optimization</li>
+                    <li>Content Updates</li>
+                </ul>
+            </div>
+            <div class="addon-card">
+                <h3>Hosting & Domain</h3>
+                <div class="price">$50 NZD/month</div>
+                <ul>
+                    <li>Premium Hosting</li>
+                    <li>Domain Management</li>
+                    <li>SSL Certificate</li>
+                    <li>Email Setup</li>
+                </ul>
+            </div>
+            <div class="addon-card">
+                <h3>Google Ads Setup</h3>
+                <div class="price">$150 NZD</div>
+                <ul>
+                    <li>Campaign Setup</li>
+                    <li>Keyword Research</li>
+                    <li>Ad Copy Creation</li>
+                    <li>Initial Optimization</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form" method="POST" netlify>
+            <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <select id="service" name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="basic">Basic Website</option>
+                    <option value="professional">Professional Website</option>
+                    <option value="premium">Premium Website</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Additional Services</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="maintenance" name="addons" value="maintenance">
+                        <label for="maintenance">Website Maintenance ($150 NZD/month)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="hosting" name="addons" value="hosting">
+                        <label for="hosting">Hosting & Domain ($50 NZD/month)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="google" name="addons" value="google">
+                        <label for="google">Google Ads Setup ($150 NZD)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Shaynek1" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shayne-kiekebosch/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://shaynek.hashnode.dev/" target="_blank"><i class="fab fa-hashnode"></i></a>
+        </div>
+        <p>&copy; 2025 Shayne Kiekebosch. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
